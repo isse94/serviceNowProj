@@ -51,4 +51,21 @@ h3 {font-weight: bold;color: antiquewhite;}
 a {color: white;}
 p{color:black}
 
+<div style= "text-align: center;">
+    <button class="button" id="buttonGarages"><a href="garages.html" target="_blank"><h3>View Garages</h3></a></button>
+    <button class="button" id="buttonVehicles"><a href="Cars" target="_blank"><h3>View Vehicles</h3></a></button></div>
+</div>
+  
+table {border: 1px solid white
+  border-collapse: collapse;
+  width: 800px;
+  font:color=white;
+}
 
+th, td {
+  border-right: 1px solid white;
+  padding: 8px;
+  
+  border-bottom: 1px solid #DDD;
+  background-color:rgb(53, 49, 49);
+}
