@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(165, 161, 161);
+    font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: antiquewhite;
+
+    
+}
+h1{color: black;}
+h2 {font-weight: bold;color: black;;}
+h3 {font-weight: bold;color: antiquewhite;}
+
+
+.button{
+    background-color: rgb(19, 18, 18); 
+    color: rgb(250, 246, 246); 
+    border: 2px solid #fcfcfc;
+    font: white ;
+  }
+  
+  button{
+    background-color: rgb(19, 18, 18); 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3px 1px;
+  }
+
+  div #singleOutput{
+    background-color: rgb(165, 161, 161);
+  }
+
+  input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  select {
+    background-color: rgb(19, 18, 18); ;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+a {color: white;}
+p{color:black}
+
+

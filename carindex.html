@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <h1 style="text-align: center;"><strong>PRESTIGE AUTOMOBILES    <img src="./imgs/car0.png" style="height: 100px;width: 300px;"></strong></h1>
+  <hr/>
+  <h2>View Vehicles</h2>
+  <input type="number" placeholder="Input Vehicle ID" id="vehicleInput"> 
+  <button type="button" id="buttonSearch">View Vehicles</button>
+  <div id="singleOutput"></div>
+  <hr/>
+  <h2>Submit New Vehicle</h2>
+  <input type="text" placeholder="Input Vehicle Name" id="nameInput"> 
+  <input type="text" placeholder="Input Vehicle Colour" id="colourInput"> 
+  <input type="text" placeholder="Input Vehicle Make" id="makeInput"> 
+  <input type="text" placeholder="Input Vehicle Model" id="modelInput"> 
+  <input type="number" placeholder="Input Doors No." id="doorsInput"> 
+  <select id="garageInput" name="garages">
+    <option value="london">London</option>
+    <option value="glasgow">Glasgow</option>
+    <option value="brighton">Brighton</option>
+    <option value="manchester">Manchester</option>
+</select>
+  <button type="button" id="buttonCreate">Submit New Vehicle</button>
+  <hr/>
+  <h2>Update Existing Vehicle</h2>
+  <input type="number" placeholder="Input Vehicle ID" id="idInput">
+  <input type="text" placeholder="Update Name" id="nameUpdate">
+  <input type="text" placeholder="Update Colour" id="colourUpdate"> 
+  <input type="text" placeholder="Update Make" id="makeUpdate"> 
+  <input type="text" placeholder="Update Model" id="modelUpdate"> 
+  <input type="number" placeholder="Update Doors" id="doorsUpdate"> 
+  <select id="garageUpdate" name="garages">
+    <option value="london">London</option>
+    <option value="glasgow">Glasgow</option>
+    <option value="brighton">Brighton</option>
+    <option value="manchester">Manchester</option>
+</select> 
+  <button type="button" id="buttonUpdate">Update Vehicle</button>
+  <hr/>
+  <h2>Delete Existing Vehicle</h2>
+  <input type="number" placeholder="Input Vehicle ID" id="idDelete">
+  <button type="button" id="buttonDelete">Delete Vehicle</button>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./js/carproject.js"></script>
+</body>
+</html>
