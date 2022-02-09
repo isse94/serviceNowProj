@@ -3,8 +3,21 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-  <h1 style="text-align: center;"><strong>PRESTIGE AUTOMOBILES    <img src="./imgs/car0.png" style="height: 100px;width: 300px;"></strong></h1>
-  <hr/>
+                                                <!-- Website header -->
+ <div class="header">
+ <h1> <h1 style="text-align: center;"><strong>PRESTIGE AUTOMOBILES    <img src="./imgs/car0.png" style="height: 100px;width: 300px;"></strong></h1>
+ </div>
+ <hr/>
+                                                 <!-- Navigation bar -->
+                                            
+<div class="topnav">
+<a href="Homepage.html" target="_self">Home</a>
+ <a href="carindex.html" target="_self">Vehicles</a>
+ <a href="garages.html" target="_self">Garages</a>
+ </div>
+<hr/>
+
+                                                   <!-- Main Body -->
   <h2>View Vehicles</h2>
   <input type="number" placeholder="Input Vehicle ID" id="vehicleInput"> 
   <button type="button" id="buttonSearch">View Vehicles</button>
@@ -42,6 +55,16 @@
   <h2>Delete Existing Vehicle</h2>
   <input type="number" placeholder="Input Vehicle ID" id="idDelete">
   <button type="button" id="buttonDelete">Delete Vehicle</button>
+
+                                                      <!-- Footer section -->
+<hr/>
+  <div class="footer">
+    <div style="text-align: center;">
+      <a href="">Terms and conditions</a>
+      <a href="">GDPR</a>
+      <a href="">Privacy Statement</a></div>
+      <p>© 2022 PrestigeAutomobiles. All rights reserved.</p>
+
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script type="module" src="./js/carproject.js"></script>
 </body>
