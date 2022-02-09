@@ -47,14 +47,25 @@ DOM.buttonCreate.onclick = () => post();
 
 
 //Delete by ID
-  const del = () => { 
-    axios.delete(`https://localhost8080/car/delete/${DOM.idDelete.value.toString()}`)
+  // const del = () => { 
+  //   axios.delete(`https://localhost8080/car/delete/${DOM.idDelete.value.toString()}`)
+  //     .then((response) => {
+  //      console.log(response);
+  //      get();
+  //     }).catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
+  const del = () => {
+    axios.delete(`http://localhost:8080/car/delete/${DOM.idDelete.value}`)
       .then((response) => {
-       console.log(response);
-       get();
+        console.log(response);
+        DOM.idDelete.value = "";
+        get();
       }).catch((err) => {
         console.log(err);
       });
   }
-  
+
   DOM.buttonDelete.onclick = () => del();
+  
