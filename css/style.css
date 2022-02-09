@@ -66,7 +66,6 @@ p {color:black} /*colour of text*/
   .column {
     width: 100%;
   }
-}
 
 /* colour of buttons on column 2 */
 .button{
@@ -189,3 +188,4 @@ img {vertical-align: middle;}
           background-color:rgb(53, 49, 49);
         }
         
+
