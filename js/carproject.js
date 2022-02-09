@@ -32,40 +32,37 @@ DOM.buttonCreate.onclick = () => post();
 
 
 //Update
-  const updateColour = () => { 
-    axios.post(`http://localhost:8080/car/update/${DOM.idInput.value.toString()}`, {colour:DOM.colourUpdate.value.toString()})
-      .then((response) => {
-       console.log(response);
-       get();
-      }).catch((err) => {
-        console.log(err);
-      });
-  }
+  const update = () => { 
+    axios.put(`http://localhost:8080/car/update/${DOM.idInput.value}`, {name : DOM.nameUpdate.value,colour : DOM.colourUpdate.value,make : DOM.makeUpdate.value,model : DOM.modelUpdate.value,doors : DOM.doorsUpdate.value})
+  .then((response) => {
+    console.log(response);
+    get();
+    DOM.nameUpdate.value = "";
+    DOM.colourUpdate.value = "";
+    DOM.makeUpdate.value = "";
+    DOM.modelUpdate.value = "";
+    DOM.doorsUpdate.value = "";
+    DOM.idInput.value = "";
+  }).catch((err) => {
+    console.log(err);
+  });
+}
 
-  
-  DOM.buttonUpdate.onclick = () => updateColour();
+  DOM.buttonUpdate.onclick = () => update();
 
 
 //Delete by ID
-  // const del = () => { 
-  //   axios.delete(`https://localhost8080/car/delete/${DOM.idDelete.value.toString()}`)
-  //     .then((response) => {
-  //      console.log(response);
-  //      get();
-  //     }).catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
-  const del = () => {
+  const delCar = () => { 
     axios.delete(`http://localhost:8080/car/delete/${DOM.idDelete.value}`)
-      .then((response) => {
-        console.log(response);
-        DOM.idDelete.value = "";
-        get();
-      }).catch((err) => {
-        console.log(err);
-      });
-  }
+    .then((response) => {
+      console.log(response);
+      DOM.idDelete.value = "";
+      get();
+    }).catch((err) => {
+      console.log(err);
+    });
 
-  DOM.buttonDelete.onclick = () => del();
+}
   
+  DOM.buttonDelete.onclick = () => delCar();
+
