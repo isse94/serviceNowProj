@@ -1,19 +1,30 @@
 'use strict'
 
-import * as DOM from './carDOM.js';
+import * as DOM from './Homepagedom.js';
 
 // search button function
 
 const get = () => {
-  axios.get(`http://localhost:8080/car/read/${DOM.vehicleInput.value.toString()}`)
+  axios.get(`http://localhost:8080/car/read/${DOM.inputV.value.toString()}`)
     .then((response) => {
-      DOM.singleOutput.innerHTML = JSON.stringify(response.data)
+      DOM.outputV.innerHTML = JSON.stringify(response.data)
     }).catch((err) => {
       console.log(err);
     });
 }
 
-DOM.buttonSearch.onclick = () => get();
+DOM.buttonV.onclick = () => get();
+
+const get = () => {
+  axios.get(`http://localhost:8080/car/read/${DOM.inputG.value.toString()}`)
+    .then((response) => {
+      DOM.outputG.innerHTML = JSON.stringify(response.data)
+    }).catch((err) => {
+      console.log(err);
+    });
+}
+
+DOM.buttonG.onclick = () => get();
 
 
 
