@@ -65,3 +65,4 @@ DOM.buttonCreate.onclick = () => post();
 }
   
   DOM.buttonDelete.onclick = () => delCar();
+
